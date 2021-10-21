@@ -77,7 +77,7 @@
 		<thead>
 			<tr>
 				<td rowspan="2">Nom</td>
-				<td colspan="2">I trimestre</td>
+				<td colspan="2">I trimestre coucou</td>
 				<td colspan="2">II trimestre</td>
 
 			</tr>

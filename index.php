@@ -10,7 +10,8 @@
 	<a href="blog.php">Blog</a> |
 
 	<a href="contact.php">Contact</a> |
-	<a href="set.php">Paramètre</a>
+	<a href="set.php">Paramètre</a> |
+	<a href="form.php">Forme</a> 
 
 	<p> Bonjour cryptnail </p>
 
