@@ -2,8 +2,23 @@
 <html>
 <head>
 	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 </head>
 <body>
+
+	<div class="menu">
+		<div id="menu_ok">
+			<a href="index.php" style="color: white; margin-right: 10px; margin-top: 40px;">Accueil</a> 
+
+			<a href="blog.php" style="color: white; margin-right: 10px; margin-top: 40px;">Blog</a> 
+
+			<a href="contact.php" style="color: white; margin-right: 10px; margin-top: 40px;">Contact</a> 
+			<a href="set.php" style="color: white; margin-right: 10px; margin-top: 40px;">Paramètre</a> 
+			<a href="form.php" style="color: white; margin-right: 10px; margin-top: 40px;">Forme</a> 
+		</div>
+	</div>
 
 	<h1>Page blog</h1>
 

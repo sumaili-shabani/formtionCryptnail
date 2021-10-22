@@ -2,29 +2,45 @@
 <html>
 <head>
 	<title>L'accueil vous soit doux!</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 </head>
-<body>
 
-	<a href="index.php">Accueil</a> |
 
-	<a href="blog.php">Blog</a> |
+	<div class="menu">
+		<div id="menu_ok">
+			<a href="index.php" style="color: white; margin-right: 10px; margin-top: 40px;">Accueil</a> 
 
-	<a href="contact.php">Contact</a> |
-	<a href="set.php">Paramètre</a> |
-	<a href="form.php">Forme</a> 
+			<a href="blog.php" style="color: white; margin-right: 10px; margin-top: 40px;">Blog</a> 
 
-	<p> Bonjour cryptnail </p>
+			<a href="contact.php" style="color: white; margin-right: 10px; margin-top: 40px;">Contact</a> 
+			<a href="set.php" style="color: white; margin-right: 10px; margin-top: 40px;">Paramètre</a> 
+			<a href="form.php" style="color: white; margin-right: 10px; margin-top: 40px;">Forme</a> 
+		</div>
+	</div>
 
-	<p> <u>Bonjour cryptnail</u> </p>
-	<p> <i>Bonjour cryptnail</i> </p>
-	<p> <b>Bonjour cryptnail</b> </p>
-	<p> <font>Bonjour cryptnail</font> </p>
-	<hr>
-	<p><strike>Bonjour cryptnail</strike></p>
+	
+	<p>
+		<img src="assets/images/testimonials-3.jpg">
 
-	<hr>
-	<marquee> <font color="red">Bonjour cryptnail </font></marquee>
+		<span>
+			“Dans un monde plein de conflits, d’injustice, de pauvreté, et de désastre, nous voulons contribuer à des signes d’espoir et de restauration. «SANTE PLUS» est convaincue que le développement social, doit être d’abord une prise de conscience durable de la population Rd congolaise qui sa première richesse passe par la prise en compte de sa santé physique, et sa terre arable fertile en abondance et rare partout dans le monde!  Que l’exploitation de la terre par des individus en bonne santé est une voie sûre qui procure rapidement des ressources, un confort  de vie et une assurance pour l’avenir plus meilleurs.
+		</span>
+	</p>
 
+	<p> 
+		<h1>
+			<p>
+				Nous ici pour les voisins qui souffrent
+			</p>
+		</h1> 
+		<h4>Dans ce monde brisé</h4>
+	</p>
+
+
+	
 
 
 </body>
