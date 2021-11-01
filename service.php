@@ -16,7 +16,7 @@
 
   	 <link rel="shortcut icon" href="assets/images/bootstrap.jpg">
 
-    <title>Contact pour info</title>
+    <title>Nos services</title>
   </head>
   <body>
 
@@ -72,97 +72,67 @@
 
 				
 				<div class="col-md-12 mt-4">
+
 					<div class="row">
-
-						<div class="col-md-12 mb-2 mt-4 text-center">
-							<h3>Contact</h3>
-							<p>
-								Veuillez nous laisser un message electronique ou contactez-nous à travers nos informations de contact.
-							</p>
-							
-						</div>
-						<div class="col-md-8">
-
+						
+						<div class="col-md-4 mb-2">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="col-md-12">
-										<h3>Envoyez-nous un message</h3>
+								<div class="row card bg-light">
+									<div class="col-md-12 card-body text-center">
+										<i class="fa fa-desktop" style="font-size: 30px;"></i>
+											<h6>CONSULTANCE INFORMATIQUE</h6>
+										<div class="col-md-12 text-center mt-2">
+											<h6>Proposer des solutions techniques à des organisations.</h6>
+											<br> <br>
+										</div>
 									</div>
 								</div>
 							</div>
-							<form class="col-md-12" method="POST">
-
-								<div class="row">
-
-									<div class="col-md-12 form-group">
-										<input type="text" name="nom" placeholder="Entrez votre nom" class="form-control" required>
-									</div>
-
-									<div class="col-md-6 form-group">
-										<input type="email" name="email" placeholder="Entrez votre adresse mail" class="form-control" required>
-									</div>
-
-									<div class="col-md-6 form-group">
-										<input type="text" name="sujet" placeholder="Entrez votre sujet" class="form-control" required>
-									</div>
-
-									<div class="col-md-12 form-group">
-										<textarea class="form-control" name="message" placeholder="Taper votre message" required></textarea>
-									</div>
-
-									<div class="col-md-12 form-group mt-2">
-										<button type="submit" class="btn btn-danger btn-block">
-											<i class="fa fa-send mr-1"></i> Envoyer
-										</button>
-									</div>
-									
-									
-
-								</div>
-								
-							</form>
-
-
-							
-							
 						</div>
 
-						<div class="col-md-4">
 
+						<div class="col-md-4 mb-2">
 							<div class="col-md-12">
-								<div class="row">
-									<div class="col-md-12">
-										<h3>Nos Contacts</h3>
-									</div>
-									<div class="col-md-12">
-										<i class="fa fa-clock-o mr-1"></i>  Ouvert 24h/24h -Lundi au samedi
-									</div>
+								<div class="row card bg-light">
+									<div class="col-md-12 card-body text-center">
+										<i class="fa fa-laptop" style="font-size: 30px;"></i>
+											<h6>CONCEPTION DES APPLICATIONS DE GESTION, WEB ET MOBILE</h6>
+										<div class="col-md-12 text-center mt-2">
+											<h6>Mise en place des applications sur mesure adaptées aux besoins des clients.</h6>
 
-									<div class="col-md-12">
-										<i class="fa fa-phone mr-1"></i>  <a href="tel:+243817883541"> +243817883541 </a>
-									</div>
-									<div class="col-md-12">
-										<i class="fa fa-envelope mr-1"></i>  <a href="mailto:info@tapandpay.com"> info@tapandpay.com </a>
-									</div>
 
-									<div class="col-md-12">
-										<i class="fa fa-map-marker mr-1"></i>  Situé sur le Boulevard Kanyamuhanga, la rue Vanny Bishweka, numero 20, au-dessus de SMICO, 2eme étage, Commune de Goma
+										</div>
 									</div>
 								</div>
 							</div>
-
-							
-							
 						</div>
 
-						<div class="col-md-12 mt-2">
-								<div class="embed-responsive embed-responsive-16by9 col-lg-12" style="width: 100%; height: 400px;">
-			    
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1038392078676!2d29.214706514103128!3d-1.679743536654087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd0f77dd21b51f%3A0x581b3fa6f38a8eac!2sUn%20Jour%20Nouveau%20Center!5e0!3m2!1sfr!2scd!4v1629463322524!5m2!1sfr!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+						<div class="col-md-4 mb-2">
+							<div class="col-md-12">
+								<div class="row card bg-light">
+									<div class="col-md-12 card-body text-center">
+										<i class="fa fa-tag" style="font-size: 30px;"></i>
+											<h6>PRESTATION DE SERVICE DE PAIEMENT</h6>
+										<div class="col-md-12 text-center mt-2">
+											<h6>Fournir un service de paiement adapter à tous les niveaux des populations.</h6>
+
+											<br>
+										</div>
+									</div>
 								</div>
+							</div>
 						</div>
+
+						<div class="col-md-12">
+							<hr>
+						</div>
+
+
+						
+
 					</div>
+					
 				</div>	
 
 
