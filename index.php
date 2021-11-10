@@ -14,106 +14,212 @@
   	<link href="assets/css/google-font.css" rel="stylesheet">
 
   	 <link rel="shortcut icon" href="assets/images/bootstrap.jpg">
+
+  	
+
+	
 	<title>Introduction js</title>
 </head>
 <body>
 
 	<div class="container">
-		<div class="col-md-12">
+		<div class="col-md-12 mt-5">
 			<div class="row">
-				<div class="col-md-12 text-center">
-					<h3 class="text-muted">Introduction sur javascript</h3>
+				
+
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-6 card">
+							<div class="col-md-12 card-body">
+								<form class="row" autocomplete="off" method="POST" action="#" id="my_form">
+
+									<div class="col-md-12 text-center">
+										<h3 class="text-muted">Le DOM <a href="blog.php" class="text-primary langue" like="12" id="langue">EN</a></h3>
+									</div>
+
+									<div class="col-md-12 form-group message">
+											
+									</div>
+									<div class="col-md-12 form-group">
+										<label class="form-control-label"> <span class="label_name">Nom*:</span></label>
+										<input type="text" name="name_okplus" id="name" class="form-control" placeholder="Entrez votre nom" value="patrona">
+										<span class="text-danger" id="error_name"></span>
+									</div>
+
+									<div class="col-md-12 form-group">
+										<label class="form-control-label"><span class="label_pwd">Mot de masse*:</span></label>
+										<input type="password" name="pwd_okplus" id="pwd" class="form-control" placeholder="Entrez votre mot de passe">
+										<span class="text-danger" id="error_pwd"></span>
+									</div>
+
+									<div class="col-md-12 form-group">
+										<button type="submit" class="btn btn-primary btn-block" id="btn1" name="valider">Valider</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	
+
+
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+
+	<!-- <script type="text/javascript" src="assets/js/Eventjquery.js"></script> -->
+
+	<!-- <script type="text/javascript">
+		
+		var langue = document.querySelector('.langue');
+		langue.addEventListener('click', (e)=>{
+			e.preventDefault();
+			var pwd = document.querySelector('#pwd');
+			var placeholder ="Enter your name";
+			pwd.placeholder=  placeholder;
+
+			console.log(pwd.placeholder);
+
+
+		})
+
+
+				
+	</script> -->
+
 	<script type="text/javascript">
+		$(document).ready(function(){
 
-		var tab = ["patrona","shabani","roger","grace","schadrack","lola","graphikart","patrick"];
-		var limite  = tab.length;
+			var form = $('#my_form');
+			var langue = $('.langue');
 
-		var i =0;
-		 // boucle for
-		// for(i = 0; i< limite; i++){
+			function viderRouge()
+			{
+				var error_name = $('#error_name');
+				var error_pwd = $('#error_pwd');
+				error_pwd.text("");
+				error_name.text("");
+			}
 
-		// 	console.log(tab[i]);
-		// }
+			function showMessage(classe,message){
+				var alerte = '<div class="alert alert-'+classe+'">'+message+'<button class="close" data-dismiss="alert"><i class="fa fa-close"></i></button></div>';
+				return alerte;
+			}
 
-		// boucle while
+			let login  = (event)=>{
+				event.preventDefault();
+				var name = $('#name').val();
+				var pwd = $('#pwd').val();
+				var message ='';
+				var error_name = $('#error_name');
+				var error_pwd = $('#error_pwd');
 
-		// while(i < limite){
-		// 	console.log(tab[i]);
-		// 	i++;
-		// }
+				var affichage = $('.message');
+				// alert("salut: "+name+" pwd:"+pwd);
 
-		 // boucle do while 
-		 // do{
-		 // 	i++;
+				var nom = 'patrona';
+				var p = '123456';
 
-		 // 	console.log(tab[i]);
-
-		 // }
-		 // while(i<limite);
-
-		 function nomComplet(nom)
-		 {
-		 	return nom;
-		 }
-		 function message(sms)
-		 {
-		 	return sms;
-		 }
-
-		 function DateJour()
-		 {
-		 	var date = new Date();
-		 	var mois = date.getMonth() + 1;
-		 	var heure = date.getHours() + 1;
-			var datecomplete = date.getDay()+"/"+mois+"/"+date.getFullYear()+" "+heure+":"+date.getMinutes()+":"+date.getSeconds();
-
-			return datecomplete;
-			
-		 }
+				if (name == '' && pwd =='') {
+					message ="Tous les champs sont obligatoires!!!!";
+					affichage.text(message);
 
 
-		 function somme(a,b)
-		 {
-		 	return a+b;
-		 }
+				}
+				else{
 
-		 function erreur(err)
-		 {
-		 	return err;
-		 }
+					if (name == '' && pwd !='') {
+						message ="Veillez remplire le nom";
+						error_name.text(message);
+						error_pwd.text("");
+						 affichage.html("");
+					}
+					else if (name !='' && pwd =='') {
+						message ="Veillez remplire le mot de passe";
+						error_pwd.text(message);
+						error_name.text("");
+						affichage.html("");
+					}
+					else{
 
-		  function division(a,b)
-		 {
-		 	if (b != 0) {
-		 		return a/b;
-		 	}
-		 	else{
-
-		 		var message = erreur("infini");
-		 		return message;
-		 	}
-		 }
-
-		 var name =  nomComplet("Roger sumaili");
-		 console.log(message("Bonjour")+""+name+" on est: "+DateJour());
-
-		 console.log("la somme ="+somme(10,4));
-
-		 console.log("le quotient ="+division(10,0));
+						if (name == nom && pwd == p) {
+							message ="Félicitation 🆗";
 
 
-		
+							affichage.html(showMessage("success", message));
+							viderRouge();
+
+						}
+						else{
+
+							if (name == nom && pwd != p) {
+								message ="Mot de paase incorrecte 🔓";
+
+								affichage.html(showMessage("danger", message));
+								viderRouge();
+								$('#pwd').val("");
+							}
+							else if (name != nom && pwd==p) {
+								message ="Nom d'utilisateur incorrect 😒";
+								affichage.html(showMessage("danger", message));
+								viderRouge();
+								$('#name').val("");
+							}
+							else{
+								message ="Information incorrecte 🙆";
+								affichage.html(showMessage("danger", message));
+								viderRouge();
+
+							}
+						   
+						   
+
+						}
+
+					}
+				}
+
+				
 
 
-		
-		
+			};
 
+			$(document).on('submit',form, login);
+
+			$(document).on('click', '.langue', (cool)=>{
+				cool.preventDefault();
+				if (confirm("Etes-vous sûre de vouloir quitter la page?")) {
+					var url = $(this).attr('href');
+					// var $label_name = $('.label_name');
+					// var $label_pwd = $('.label_pwd');
+
+					// $label_name.text("Name*:");
+					// $label_pwd.text("Password*:");
+
+					 window.location.href="blog.php";
+				}
+				else{
+					return false;
+				}
+
+				
+			})
+
+			// $('.langue').on('click', function(event){
+			// 	event.preventDefault();
+			// 	alert("boom langue");
+			// });
+
+
+
+		});
 	</script>
+
+
 
 
 </body>
