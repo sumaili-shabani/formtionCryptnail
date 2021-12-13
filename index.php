@@ -1,226 +1,183 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
+/*
+commentaire multiligne
+*/
+$nom = "Patrona";
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- hors connexion -->
+$adresse = "GOMA TMK";
+$a = 15;
+$b = 20;
+$somme = $a+$b;
+$age = 13;
 
-    <!-- fontawason -->
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.min.css">
-  	<link href="assets/css/google-font.css" rel="stylesheet">
+// echo("prêt pour debiter le PHP ".$nom);
+// echo("la somme de".$a."+".$b.'='.$somme);
+/*
+$test = ($age >= 18) ? "Majeur" : "Mineur" ;
+echo("<h1>l'homme est: ".$test."</h1>")."<br>";
+echo("====================")."<br>";
 
-  	 <link rel="shortcut icon" href="assets/images/bootstrap.jpg">
+if ($age >= 18) {
+	echo("l'homme est: Majeur");
+}
+else{
+	echo("l'homme est: Mineur");
+}
+*/
 
-  	
+/*
+$position = "o";
 
+if ($position == "N" || $position =="n") {
+	# code...
+	echo("C'est le Nord!");
+}
+elseif ($position == "S" || $position =="s") {
+	# code...
+	echo("C'est le Sud!");
+}
+elseif ($position == "E" || $position =="e") {
+	# code...
+	echo("C'est l'est!");
+}
+elseif ($position == "O" || $position =="o") {
+	# code...
+	echo("C'est l'oust!");
+}else{
+	echo("Desole !!!");
+}
+*/
+
+/*
+
+$pourcentage = 73;
+$echec = 1;
+if ($pourcentage ==1 || $pourcentage <=49) {
+	# code...
+	echo("Ajourné");
+}
+elseif ($pourcentage ==50 || $pourcentage <=69 ) {
+	# code...
+	if ($echec <= 2) {
+		# code...
+		echo("Mention S");
+	}
+	else{
+		echo("Mention AA");
+	}
 	
-	<title>Introduction js</title>
-</head>
-<body>
-
-	<div class="container">
-		<div class="col-md-12 mt-5">
-			<div class="row">
-				
-
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-3"></div>
-						<div class="col-md-6 card">
-							<div class="col-md-12 card-body">
-								<form class="row" autocomplete="off" method="POST" action="#" id="my_form">
-
-									<div class="col-md-12 text-center">
-										<h3 class="text-muted">Le DOM <a href="blog.php" class="text-primary langue" like="12" id="langue">EN</a></h3>
-									</div>
-
-									<div class="col-md-12 form-group message">
-											
-									</div>
-									<div class="col-md-12 form-group">
-										<label class="form-control-label"> <span class="label_name">Nom*:</span></label>
-										<input type="text" name="name_okplus" id="name" class="form-control" placeholder="Entrez votre nom" value="patrona">
-										<span class="text-danger" id="error_name"></span>
-									</div>
-
-									<div class="col-md-12 form-group">
-										<label class="form-control-label"><span class="label_pwd">Mot de masse*:</span></label>
-										<input type="password" name="pwd_okplus" id="pwd" class="form-control" placeholder="Entrez votre mot de passe">
-										<span class="text-danger" id="error_pwd"></span>
-									</div>
-
-									<div class="col-md-12 form-group">
-										<button type="submit" class="btn btn-primary btn-block" id="btn1" name="valider">Valider</button>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="col-md-3"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+}
+elseif ($pourcentage ==70 || $pourcentage <=79 ) {
+	# code...
+	if ($echec <= 2) {
+		# code...
+		echo("Mention D");
+	}
+	else{
+		echo("Mention AA");
+	}
 	
+}
+else{
+echo("Boom");
+}
+
+*/
+
+// for ($i=0; $i <=10 ; $i++) { 
+// 	# code...
+// 	echo($i)."<br>";
+// }
+
+$i = 0;
+// while ($i <= 10) {
+
+// 	# code...
+// 	echo($i)."<br>";
+// 	$i++;
+// }
+
+// do{
+// 	echo($i)."<br>";
+// 	$i++;
+// }while($i <= 10);
+
+// $tab = ["Patrona", "Cedrick","VB","Benjamin","Jaspe","Gloire le geek","Le DSI de comando"];
+// for ($i=0; $i < 7; $i++) { 
+// 	# code...
+// 	echo($tab[$i])."<br>";
+
+// }
+
+$cours = array(
+	"nom" 	=> "SQL",
+	"Ponderation" 	=> "50",
+	"Niveau" 	=> "Debitant",
+);
+
+foreach ($cours as $key => $value) {
+	# code...
+	echo($key.": ".$value)."<br>";
+}
 
 
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
+function getMessage($heure)
+{
+	$message='';
+	if ($heure > 13) {
+		# code...
+		$message = "Bonsoir!";
 
-	<!-- <script type="text/javascript" src="assets/js/Eventjquery.js"></script> -->
+	}
+	else{
+		$message = "Bonjour!";
+	}
+	return $message;
+}
 
-	<!-- <script type="text/javascript">
-		
-		var langue = document.querySelector('.langue');
-		langue.addEventListener('click', (e)=>{
-			e.preventDefault();
-			var pwd = document.querySelector('#pwd');
-			var placeholder ="Enter your name";
-			pwd.placeholder=  placeholder;
+function salutation($nom)
+{
+	return $nom;
+}
 
-			console.log(pwd.placeholder);
+function view($message)
+{
+	echo($message);
+}
 
+$nom = salutation("Patrona shabani sumaili ").getMessage(16);
+view($nom);
 
-		})
+ function somme($montant)
+ {
+ 	
+ 	return $montant;
+ }
 
+ function tva($taux)
+ {
+ 	return $taux;
+ }
 
-				
-	</script> -->
+ $montant = somme(400);
+ $reduction = tva(2);
+ $total;
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-
-			var form = $('#my_form');
-			var langue = $('.langue');
-
-			function viderRouge()
-			{
-				var error_name = $('#error_name');
-				var error_pwd = $('#error_pwd');
-				error_pwd.text("");
-				error_name.text("");
-			}
-
-			function showMessage(classe,message){
-				var alerte = '<div class="alert alert-'+classe+'">'+message+'<button class="close" data-dismiss="alert"><i class="fa fa-close"></i></button></div>';
-				return alerte;
-			}
-
-			let login  = (event)=>{
-				event.preventDefault();
-				var name = $('#name').val();
-				var pwd = $('#pwd').val();
-				var message ='';
-				var error_name = $('#error_name');
-				var error_pwd = $('#error_pwd');
-
-				var affichage = $('.message');
-				// alert("salut: "+name+" pwd:"+pwd);
-
-				var nom = 'patrona';
-				var p = '123456';
-
-				if (name == '' && pwd =='') {
-					message ="Tous les champs sont obligatoires!!!!";
-					affichage.text(message);
-
-
-				}
-				else{
-
-					if (name == '' && pwd !='') {
-						message ="Veillez remplire le nom";
-						error_name.text(message);
-						error_pwd.text("");
-						 affichage.html("");
-					}
-					else if (name !='' && pwd =='') {
-						message ="Veillez remplire le mot de passe";
-						error_pwd.text(message);
-						error_name.text("");
-						affichage.html("");
-					}
-					else{
-
-						if (name == nom && pwd == p) {
-							message ="Félicitation 🆗";
-
-
-							affichage.html(showMessage("success", message));
-							viderRouge();
-
-						}
-						else{
-
-							if (name == nom && pwd != p) {
-								message ="Mot de paase incorrecte 🔓";
-
-								affichage.html(showMessage("danger", message));
-								viderRouge();
-								$('#pwd').val("");
-							}
-							else if (name != nom && pwd==p) {
-								message ="Nom d'utilisateur incorrect 😒";
-								affichage.html(showMessage("danger", message));
-								viderRouge();
-								$('#name').val("");
-							}
-							else{
-								message ="Information incorrecte 🙆";
-								affichage.html(showMessage("danger", message));
-								viderRouge();
-
-							}
-						   
-						   
-
-						}
-
-					}
-				}
-
-				
-
-
-			};
-
-			$(document).on('submit',form, login);
-
-			$(document).on('click', '.langue', (cool)=>{
-				cool.preventDefault();
-				if (confirm("Etes-vous sûre de vouloir quitter la page?")) {
-					var url = $(this).attr('href');
-					// var $label_name = $('.label_name');
-					// var $label_pwd = $('.label_pwd');
-
-					// $label_name.text("Name*:");
-					// $label_pwd.text("Password*:");
-
-					 window.location.href="blog.php";
-				}
-				else{
-					return false;
-				}
-
-				
-			})
-
-			// $('.langue').on('click', function(event){
-			// 	event.preventDefault();
-			// 	alert("boom langue");
-			// });
-
-
-
-		});
-	</script>
+ if ($montant >=100) {
+ 	# code...
+ 	$total = ($montant - ($montant * $reduction) / 100);
+ 	view("net à payer: ".$total."$");
+ }
+ else{
+ 	$total = $montant;
+ 	view("net à payer: ".$total."$");
+ }
 
 
 
 
-</body>
-</html>
+
+
+
+
+?>

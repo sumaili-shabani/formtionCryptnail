@@ -223,7 +223,7 @@
 
 
 
-	<div class="modal" id="modalvideo">
+	<div class="modal" id="modalvideo" >
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header bg-dark text-white">
