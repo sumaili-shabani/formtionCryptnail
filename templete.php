@@ -19,7 +19,7 @@
 				
 				<div class="col-md-12 mt-4">
 					<!-- mes scripts commencent -->
-					<h1>Accueil</h1>
+
 				
 					<!-- fin mes scripts -->
 
