@@ -20,6 +20,12 @@
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 	          <a class="dropdown-item" href="users.php"><i class="fa fa-user mr-1"></i>les utilisateurs</a>
 	          <a class="dropdown-item" href="#"><i class="fa fa-tag mr-1"></i>Rôle</a>
+
+	          <div class="dropdown-divider"></div>
+
+	          <a href="crud.php" class="dropdown-item">
+	          	<i class="fa fa-user mr-1"></i> Crud ajax
+	          </a>
 	          
 	          
 	        </div>

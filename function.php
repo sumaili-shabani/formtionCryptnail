@@ -20,6 +20,29 @@ function upload_image()
 	}
 }
 
+function get_image_name($user_id)
+{
+	 include('bd.php');
+	 $statement = $connection->prepare("SELECT image FROM users WHERE id = '$user_id'");
+	 $statement->execute();
+	 $result = $statement->fetchAll();
+	 foreach($result as $row)
+	 {
+
+	 	$image = $row["image"];
+	   return  $image;
+	 }
+}
+
+function get_total_all_records()
+{
+	 include('bd.php');
+	 $statement = $connection->prepare("SELECT * FROM users");
+	 $statement->execute();
+	 $result = $statement->fetchAll();
+	 return $statement->rowCount();
+}
+
 function redirect($file)
 {
 	header("Location:".$file.".php");
